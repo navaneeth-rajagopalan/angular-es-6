@@ -2,10 +2,14 @@
   "name": "chat-app",
   "version": "0.0.1",
   "dependencies": {
+    "angular": "^1.6.4",
     "body-parser": "^1.17.2",
     "cors": "^2.8.3",
     "express": "^4.15.3",
     "path": "^0.12.7",
     "socket.io": "^2.0.3"
+  },
+  "script": {
+    "start": "nodemon server.js"
   }
 }
