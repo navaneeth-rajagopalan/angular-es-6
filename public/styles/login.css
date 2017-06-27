@@ -1,0 +1,25 @@
+.login-user-name{
+    border: 0;
+    width: 500px;
+    border-bottom: 2px solid white;
+    color: white;
+}
+.login-container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(50, 50, 50);
+}
+.login-user-name input, .login-user-name input::-webkit-input-placeholder{
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgb(50, 50, 50);
+    font-family: cursive;
+    padding-bottom: 5px;
+}
+.login-user-name input::-webkit-input-placeholder{
+    color: rgb(120, 120, 120);
+}

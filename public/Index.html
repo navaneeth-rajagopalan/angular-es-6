@@ -3,11 +3,20 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chat app</title>
+        <link rel="stylesheet" href="public/main.css">
+        
         <script src="/public/vendor/scripts/socket.io.js"></script>
         <script src="/public/vendor/scripts/angular.min.js"></script>
+        <script src="/public/vendor/scripts/angular-route.min.js"></script>
+        <script src="/public/Socket.IO/module.js"></script>
+        <script src="/public/ChatComponents/module.js"></script>
+        <script src="/public/Helpers/module.js"></script>
+        <script src="/public/Helpers/Services/StorageService.js"></script>
+        <script src="/public/Helpers/Directives/InputFieldDirectives.js"></script>
+        <script src="/public/route.config.js"></script>
         <script src="/public/app.js"></script>
     </head>
     <body>
-        <div ng-controller="test"></div>
+        <ng-view></ng-view>
     </body>
 </html>

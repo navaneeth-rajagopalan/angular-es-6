@@ -1,0 +1,22 @@
+.chat-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.chat-text{
+    flex: 9;
+    border-radius: 30px;
+    padding: 2px 20px;
+    border: 1px solid gray;
+}
+.chat-send{
+    flex: 1;
+    height: 30px;
+    border-radius: 50px;
+    margin: 10px;
+    background-color: rgb(40, 150, 20);
+    color: white;
+}
+.chat-head-name{
+    min-width: 50px;
+}
