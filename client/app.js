@@ -1,5 +1,5 @@
 (function(angular){
-angular.module('route.config', ['ngRoute', 'helpers'])
+angular.module('chatApp', ['route.config', 'helpers', 'socket.io', 'chatComponents'])
 .config(['$routeProvider', function($routeProvider){
     $routeProvider
     .when('/login', {
@@ -35,10 +35,22 @@ angular.module('route.config', ['ngRoute', 'helpers'])
 .run(['$rootScope', '$location', function($rootScope, $location){
     $rootScope.$on('$routeChangeStart', function(event, nextRoute, currentRoute){
         if($rootScope.loggedInUser === undefined || $rootScope.loggedInUser === null || $rootScope.loggedInUser === ''){
+            console.log(nextRoute)
+            console.log(currentRoute);
             if(! nextRoute.$$route.templateUrl.endsWith('Login.html')){ // Routing to routes other than /Login
                 $location.path('/login');
             }
         }        
     });
 }])
+.directive('header', ['storageService', function(storageService){
+    return{
+        templateUrl: 'public/views/Header.html',
+        link: function(scope, elem, attr){
+            scope.logOut = function(){
+                storageService.blah();
+            }
+        }
+    }
+}]);
 })(window.angular);
