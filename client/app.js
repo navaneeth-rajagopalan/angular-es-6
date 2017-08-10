@@ -30,7 +30,7 @@ angular.module('chatApp', ['route.config', 'helpers', 'socket.io', 'chatComponen
     })
     .otherwise({
         redirectTo: '/login'
-    })
+    });
 }])
 .run(['$rootScope', '$location', function($rootScope, $location){
     $rootScope.$on('$routeChangeStart', function(event, nextRoute, currentRoute){
