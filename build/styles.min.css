@@ -1,0 +1,2 @@
+*{margin:0;padding:0}.template-holder,body,html{height:100%}button,input{border:0}button:focus,input:focus{outline:0}
+.login-user-name{border:0;width:500px;border-bottom:2px solid #fff;color:#fff}.login-container{display:flex;height:100%;align-items:center;justify-content:center;background-color:#323232}.login-user-name input,.login-user-name input::-webkit-input-placeholder{font-size:40px;width:100%;text-align:center;color:#fff;background-color:#323232;font-family:cursive;padding-bottom:5px}.login-user-name input::-webkit-input-placeholder{color:#787878}
